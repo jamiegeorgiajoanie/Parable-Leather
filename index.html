@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parable Leather</title>
-    <link rel="stylesheet" href="style.css">
     <style>
         body {
             display: flex;
-            font-family: Arial, sans-serif;
+            flex-direction: row;
+            font-family: 'Georgia', serif;
             margin: 0;
+            line-height: 1.6;
+            background-color: #F5F5F5;
+            color: #333;
         }
         nav {
             width: 250px;
@@ -17,16 +20,38 @@
             color: white;
             padding: 20px;
             box-sizing: border-box;
+            height: 100vh;
+            position: sticky;
+            top: 0;
         }
         nav a {
             display: block;
             color: white;
             text-decoration: none;
             margin: 10px 0;
+            padding: 10px 0;
+            border-bottom: 1px solid #555;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
         }
         main {
             flex: 1;
-            padding: 20px;
+            padding: 40px;
+            background-color: #fff;
+            border-left: 3px solid #D1C1B3;
+        }
+        h1, h2 {
+            margin-top: 0;
+        }
+        h1 {
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.5em;
+            color: #D1C1B3;
         }
     </style>
 </head>
@@ -37,10 +62,11 @@
         <a href="contact.html">Contact</a>
         <a href="style1.html">Style 1</a>
         <a href="style2.html">Style 2</a>
+        <!-- Add more styles as needed -->
     </nav>
     <main>
         <h2>Welcome to the Parable Leather Collection</h2>
-        <p>Your source for high quality semi-aniline chrome tanned leather. Navigate through our menu to find more.</p>
+        <p>Your source for high quality semi-aniline chrome tanned leather. Navigate through our menu to find out more.</p>
         <!-- Add additional content here -->
     </main>
 </body>
